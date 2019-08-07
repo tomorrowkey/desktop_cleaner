@@ -21,6 +21,21 @@ Example config means
 - Desktop files backup to `/Volumes/GoogleDrive/My Drive/Desktop` when it updated at 7 days ago or older.
 - Archive(zip) it when extname is `.app` or `.playground`.
 
+# Development
+
+## Setup
+
+```sh
+$ git submodule update --init --recursive
+$ bundle install
+```
+
+## Run test
+
+```sh
+$ bundle exec rake rubocop
+```
+
 # License
 
 ```
