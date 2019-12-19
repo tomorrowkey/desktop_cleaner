@@ -36,6 +36,19 @@ $ bundle install
 $ bundle exec rake rubocop
 ```
 
+## Commit to bitbar-plugins
+
+```
+$ cd ../bitbar-plugins
+$ git checkout master
+$ git pull upstream master
+$ git push origin master
+$ git switch -c $BRANCH_NAME
+$ git diff Tools/desktop_cleaner.rb ../desktop_cleaner/desktop_cleaner.rb | patch -p1
+$ git add .
+$ git commit
+```
+
 # License
 
 ```
